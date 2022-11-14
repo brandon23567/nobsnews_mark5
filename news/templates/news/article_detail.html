@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>noBSnews</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/article_detail.css' %}">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h2>noBSnews</h2>
+		</div>
+
+		<ul class="navbar">
+			<li><a href="{% url 'actual_home' %}">Home</a></li>
+			<li><a href="{% url 'about' %}">About</a></li>
+			<li><a href="{% url 'subscription' %}">Subscription</a></li>
+		</ul>
+
+		<div class="logout_btn_container">
+			<button class="logout_btn"><a href="{% url 'home' %}">Logout</a></button>
+		</div>
+	</header>
+
+	<section class="main_content_container">
+		<div class="left_container"></div>
+		<div class="main">
+			<div class="img_container">
+				<img src="{{article.article_img.url}}" class="img">
+			</div>
+			<div class="content_container">
+				<h1>{{article.title}}</h1>
+				<p>{{article.body|safe}}</p>
+			</div>
+		</div>
+		<div class="right_container"></div>
+	</section>
+
+	<footer>
+		This is the footer for now
+	</footer>
+</body>
+</html>

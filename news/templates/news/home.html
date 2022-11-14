@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>noBSnews</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<h2>no<span>BS</span>news</h2>
+		</div>
+
+		<ul class="navbar">
+			<li><a href="{% url 'home' %}">Home</a></li>
+			<li><a href="{% url 'about' %}">About</a></li>
+			<li><a href="{% url 'subscription' %}">Subscription</a></li>
+		</ul>
+
+		<div class="signup_btn_container">
+			<button class="signup_btn"><a href="{% url 'signup' %}">Sign Up</a></button>
+		</div>
+	</header>
+
+	<section class="main_content_container">
+		<div class="left"></div>
+		<div class="main">
+			<div class="article">
+				<div class="img_container">
+					<img src="{% static 'imgs/aizen.jpg' %}" class="img">
+				</div>
+				<div class="content_container">
+					<h2>Kakorot is about that life</h2>
+					<p>
+						Goku is your typical shonen MC. Someone who is dumb and they all about the power of friendship and all that BS but i'm here to tell you kakorot don't give a fuck bout non of that. This man is a straight demon for that smoke. You know that thing where they be like this nigga's hand's are rated E for everyone, yeah that pretty much sum's up goku(or kakorot)
+					</p>
+					<button class="more_btn"><a href="{% url 'article1' %}">Read More</a></button>
+				</div>
+			</div>
+
+			<div class="article">
+				<div class="img_container">
+					<img src="{% static 'imgs/aizen2.jpg' %}" class="img">
+				</div>
+				<div class="content_container">
+					<h2>Buu is one with the damn force!</h2>
+					<p>
+						Y'all ever be chilling on tiktok watching a random anime edit and someone show's you character's who got black air force energy. Nigga's like madara, kenpachi and eren. And you see buu, well? i'm here to tell you that buu doesn't deserve to be on that list. This man doesn't have black air force energy. HE IS THE DAMN FORCE!!!....
+					</p>
+					<button class="more_btn"><a href="{% url 'article2' %}">Read More</a></button>
+				</div>
+			</div>
+
+			<!-- <div class="article">
+				<div class="img_container">
+					<img src="{% static 'imgs/R.jpg' %}" class="img">
+				</div>
+				<div class="content_container">
+					<h2>I think someone gotta tell my man ichigo here that he gotta let some shit slide.</h2>
+					<p>
+						The shonen MC. This a genre of MC's where the MC is all about forgiving and forgetting. About making friend's with the same nigga's that tried killing your stupid ass. But there is 1 shonen MC who gives 0 fuck's about this rule. And that is ichigoat. And when i mean he don't give a fuck, i mean HE DON'T GIVE A FUCK.....
+					</p>
+					<button class="more_btn"><a href="{% url 'article3' %}">Read More</a></button>
+				</div>
+			</div> -->
+
+			<!-- <div class="article">
+				<div class="img_container">
+					<img src="{% static 'imgs/aizen.jpg' %}" class="img">
+				</div>
+				<div class="content_container">
+					<h2>The art of jumping a nigga in anime</h2>
+					<p>
+						Umm yeah if you reading this you probably already know where this shit is going. Long gone are the day's where nigga's could run the 1's 1v1. Nowaday's they just jump the shit outa you and i feel this is what japan has got right about other part's of the world. There ain't no "nigga square up" they just jump your ass...
+					</p>
+					<button class="more_btn"><a href="{% url 'article4' %}">Read More</a></button>
+				</div>
+			</div> -->
+
+			<div class="article">
+				<div class="img_container">
+					<img src="{% static 'imgs/R.jpg' %}" class="img">
+				</div>
+				<div class="content_container">
+					<h2>The ghost of the ultimate opp</h2>
+					<p>
+						Yeah this nigga need's no introduction. The fact that you are reading this mean's you already know who dis is and if you don't, nigga i don't know what the fuck you have been doing. How can you not know UCHIHA MADARA. But for those who know, they know that this man was built like that. But how much was he like that? well das why i'm here, to remind you how much of an opp this MF is/was.
+					</p>
+					<button class="more_btn"><a href="{% url 'article5' %}">Read More</a></button>
+				</div>
+			</div>
+		</div>
+		<div class="right"></div>
+	</section>
+
+	<footer>
+		This is the footer for now
+	</footer>
+</body>
+</html>

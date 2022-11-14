@@ -1,0 +1,25 @@
+h1{
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+h2{
+	text-align: center;
+}
+
+
+form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+form input{
+	padding: 10px 3rem;
+}
+
+form button{
+	padding: 10px 7rem;
+	cursor: pointer;
+}

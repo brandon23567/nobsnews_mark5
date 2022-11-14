@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>noBSnews</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
+</head>
+<body>
+	<h1>Sign Up page</h1>
+
+	<form action="" method="POST" class="main_form_container">
+		{% csrf_token %}
+		<label>Username:</label>
+		<input type="text" name="username" placeholder="Enter your username" Required>
+		<br>
+		<label>Email:</label>
+		<input type="email" name="email" placeholder="Enter your email" Required>
+		<br>
+		<label>Password:</label>
+		<input type="password" name="password" placeholder="Enter your password" Required>
+		<br>
+		<label>Confirm Password:</label>
+		<input type="password" name="confirm_password" placeholder="Confirm your password" Required>
+		<br>
+		<button type="submit">Sign Up</button>
+	</form>
+
+	<h2>Already have an account? <a href="{% url 'signin' %}">Sign in</a></h2>
+</body>
+</html>
